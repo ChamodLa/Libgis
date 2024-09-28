@@ -1,5 +1,9 @@
 # 📚 Library Management System (LibGIS)
 
+**Follow Me:**
+- LinkedIn: [Chamod Abeywickramage](https://www.linkedin.com/in/chamod-abeywickramage/)
+- GitHub: [ChamodLa](https://github.com/ChamodLa)
+
 ## Table of Contents
 - [📖 Project Overview](#project-overview)
 - [✨ Features](#features)
