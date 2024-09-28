@@ -1,9 +1,12 @@
+<div align="center">
+  
 # 📚 Library Management System (LibGIS)
 
 **Follow Me:**
-- LinkedIn: [Chamod Abeywickramage](https://www.linkedin.com/in/chamod-abeywickramage/)
-- GitHub: [ChamodLa](https://github.com/ChamodLa)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/chamod-abeywickramage/)
+- [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/ChamodLa)
 
+</div>
 
 ## Table of Contents
 - [📖 Project Overview](#project-overview)
