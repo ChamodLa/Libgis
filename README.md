@@ -4,6 +4,7 @@
 - LinkedIn: [Chamod Abeywickramage](https://www.linkedin.com/in/chamod-abeywickramage/)
 - GitHub: [ChamodLa](https://github.com/ChamodLa)
 
+
 ## Table of Contents
 - [📖 Project Overview](#project-overview)
 - [✨ Features](#features)
@@ -78,11 +79,62 @@ LibGIS follows a layered architecture using Maven to structure the project. This
 - **Searching Records**: Use the search bar to find book records based on book ID or member ID.
 
 ## 📸 Screenshots
-- Main Interface
-- Add New Book Record
-- View Book Records
-- Mark Book as Returned
-- Search for a Book Record
+### Login
+![Login](./Readme/Login.PNG)
+
+### Invalid Password
+![Invalid Password](./Readme/Invalid%20Password.PNG)
+
+### Dashboard
+![Dashboard](./Readme/Dashboard.PNG)
+
+### Barrow Book
+![Barrow Book](./Readme/Barrow%20Book.PNG)
+
+### Book Delete Confirmation
+![Book Delete Confirmation](./Readme/Book%20Delete%20Confirmation.PNG)
+
+### Book Delete Successfully
+![Book Delete Successfully](./Readme/Book%20Delete%20Successfully.PNG)
+
+### Book Save Successful
+![Book Save Successful](./Readme/Book%20Save%20Succesfull.PNG)
+
+### Book Return
+![Book Return](./Readme/BookReturn.PNG)
+
+### Book Save Success
+![Book Save Success](./Readme/BookSaveSuccess.PNG)
+
+### Delete Member Confirmation
+![Delete Member Confirmation](./Readme/Delete%20Member%20Confirmation.PNG)
+
+### Manage Authors and Directors
+![Manage Authors and Directors](./Readme/Manage%20Authors%20And%20Directors.PNG)
+
+### Manage DVD
+![Manage DVD](./Readme/Manage%20DVD.PNG)
+
+### Manage Book
+![Manage Book](./Readme/ManageBook.PNG)
+
+### Manage Member
+![Manage Member](./Readme/Menage%20Member.PNG)
+
+### Return Book Record
+![Return Book Record](./Readme/Return%20Book%20Record.PNG)
+
+### Save Member
+![Save Member](./Readme/Save%20Member.PNG)
+
+### Search Book by ID
+![Search Book by ID](./Readme/Search%20Book%20By%20Id.PNG)
+
+### Search Member by ID
+![Search Member by ID](./Readme/Search%20Member%20By%20ID.PNG)
+
+### Add to Cart
+![Add to Cart](./Readme/add%20to%20cart.PNG)
 
 ## 🤝 Contributing
 1. Fork the repository.
