@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="541.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.libgis.libray_management_system.Login_formController">
+    <stylesheets>
+        <URL value="@/styles/login_form.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="bodybg" prefHeight="541.0" prefWidth="796.0">
+         <children>
+            <ImageView fitHeight="579.0" fitWidth="962.0" layoutX="-111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/login_bg.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="MainAnchorpane" layoutX="218.0" layoutY="80.0" prefHeight="390.0" prefWidth="415.0" stylesheets="@../../../styles/signup_form.css">
+               <children>
+                  <TextField fx:id="txtusername" layoutX="109.0" layoutY="79.0" prefHeight="38.0" prefWidth="213.0" promptText="Username" styleClass="textfild" stylesheets="@../../../styles/signup_form.css" />
+                  <Button layoutX="133.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnsignupOnAction" prefHeight="38.0" prefWidth="149.0" styleClass="btn" stylesheets="@../../../styles/signup_form.css" text="Sign Up" />
+                  <PasswordField fx:id="pword" layoutX="109.0" layoutY="186.0" prefHeight="38.0" prefWidth="213.0" promptText="Password" styleClass="textfild" stylesheets="@../../../styles/signup_form.css" />
+                  <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="68.0" layoutY="84.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Username.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="29.0" layoutX="68.0" layoutY="191.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/password.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="cpword" layoutX="109.0" layoutY="237.0" prefHeight="38.0" prefWidth="213.0" promptText="Password" styleClass="textfild" stylesheets="@../../../styles/signup_form.css" />
+                  <ImageView fitHeight="48.0" fitWidth="29.0" layoutX="68.0" layoutY="242.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/confirm.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtemail" layoutX="109.0" layoutY="132.0" prefHeight="38.0" prefWidth="213.0" promptText="Email" styleClass="textfild" stylesheets="@../../../styles/signup_form.css" />
+                  <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="68.0" layoutY="137.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/mail.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="344.0" text="Already have an account ?" />
+                  <Hyperlink layoutX="253.0" layoutY="341.0" onAction="#btnloginOnAction" text="Sign in">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children></AnchorPane>
+            <AnchorPane fx:id="SubAnchorpane" layoutX="254.0" layoutY="39.0" prefHeight="83.0" prefWidth="347.0" stylesheets="@../../../styles/signup_form.css">
+               <children>
+                  <Label layoutX="106.0" layoutY="17.0" text="Join us today">
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="44.0" text="Enter your email and password to register">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

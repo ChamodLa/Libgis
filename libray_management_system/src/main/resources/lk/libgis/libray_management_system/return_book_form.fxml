@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.libgis.libray_management_system.Return_book_formController">
+   <children>
+      <TableView fx:id="tbReturnBook" layoutX="26.0" layoutY="122.0" prefHeight="509.0" prefWidth="841.0">
+        <columns>
+          <TableColumn fx:id="colRecordId" prefWidth="75.0" text="Record Id" />
+          <TableColumn fx:id="colBookId" prefWidth="75.0" text="Book Id" />
+            <TableColumn fx:id="colBookName" prefWidth="213.0" text="Book Name" />
+            <TableColumn fx:id="coMemberId" prefWidth="88.0" text="Member Id" />
+            <TableColumn fx:id="colMemberName" prefWidth="232.0" text="Member Name" />
+            <TableColumn fx:id="colReturnDate" prefWidth="157.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="140.0" layoutY="62.0" onAction="#txtSearchOnAction" prefHeight="25.0" prefWidth="228.0" promptText="Search.." />
+      <Label fx:id="lblLateDateCount" layoutX="140.0" layoutY="646.0" prefHeight="17.0" prefWidth="32.0" />
+      <Button layoutX="706.0" layoutY="675.0" mnemonicParsing="false" onAction="#btnMarkAsReturnOnAction" prefHeight="42.0" prefWidth="118.0" text="Mark As Return" />
+      <Label fx:id="lblFine" layoutX="58.0" layoutY="728.0" prefHeight="17.0" prefWidth="32.0" />
+      <Label fx:id="lblBalance" layoutX="773.0" layoutY="728.0" prefHeight="17.0" prefWidth="32.0" />
+      <Text layoutX="26.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Member Id :" wrappingWidth="109.13671875" />
+   </children>
+</AnchorPane>

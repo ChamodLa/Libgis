@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="908.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.libgis.libray_management_system.Manage_authors_and_directors_formController">
+    <stylesheets>
+        <URL value="@/styles/manage_authors_and_publishers_form.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="797.0" prefWidth="432.0">
+         <children>
+            <Label layoutX="149.0" layoutY="14.0" text="Manage Directors">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDirectorId" layoutX="36.0" layoutY="56.0" prefHeight="25.0" prefWidth="360.0" promptText="Director Id" />
+            <TextField fx:id="txtDirectorName" layoutX="36.0" layoutY="101.0" prefHeight="25.0" prefWidth="360.0" promptText="Director Name" />
+            <Button layoutX="36.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnSaveDirectorOnAction" text="Save" />
+            <Button layoutX="128.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnUpdateDirectorOnAction" text="Update" />
+            <Button layoutX="240.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnDeleteDirectorOnAction" text="Delete" />
+            <Button layoutX="353.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnClearDirectorOnAction" text="Clear" />
+            <TableView fx:id="tblDirector" layoutX="36.0" layoutY="306.0" prefHeight="463.0" prefWidth="360.0">
+              <columns>
+                <TableColumn fx:id="colDirectorId" prefWidth="99.0" text="Id" />
+                <TableColumn fx:id="colDirectorName" prefWidth="260.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="454.0" layoutY="14.0" prefHeight="797.0" prefWidth="432.0">
+         <children>
+            <Label layoutX="157.0" layoutY="14.0" text="Manage Authors">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAuthorId" layoutX="36.0" layoutY="56.0" prefHeight="25.0" prefWidth="360.0" promptText="Author Id" />
+            <TextField fx:id="txtAuthorName" layoutX="36.0" layoutY="101.0" prefHeight="25.0" prefWidth="360.0" promptText="Author Name" />
+            <Button layoutX="36.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnSaveAuthorOnAction" text="Save" />
+            <Button layoutX="128.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnUpdateAuthorOnAction" text="Update" />
+            <Button layoutX="240.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnDeleteAuthorOnAction" text="Delete" />
+            <Button layoutX="353.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnClearAuthorOnAction" text="Clear" />
+            <TableView fx:id="tblAuthor" layoutX="36.0" layoutY="307.0" prefHeight="463.0" prefWidth="360.0">
+               <columns>
+                  <TableColumn fx:id="colAuthorId" prefWidth="122.0" text="Id" />
+                  <TableColumn fx:id="colAuthorName" prefWidth="237.0" text="Name" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="451.0" orientation="VERTICAL" prefHeight="824.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>

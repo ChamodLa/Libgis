@@ -1,0 +1,32 @@
+#sidebar{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #42424A, #191919);
+    -fx-background-radius: 30px;
+
+}
+
+.btn {
+    -fx-background-radius: 20px;
+    -fx-transition: all 0.3s ease; 
+}
+
+.btn:hover {
+    -fx-background-color: #333333; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0.0, 0, 4); 
+    -fx-scale-x: 1.05; 
+    -fx-scale-y: 1.05; 
+    -fx-text-fill: white;
+}
+
+.logout_btn{
+    -fx-background-image: url(../lk/libgis/libray_management_system/img/switch.png);
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 10%;
+    -fx-background-color:#4f4f4f;
+    -fx-background-radius: 10px;
+}
+
+#mainwin{
+    -fx-background-radius: 20px;
+    -fx-background-color: #4f4f4f;
+}

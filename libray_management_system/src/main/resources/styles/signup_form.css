@@ -1,0 +1,20 @@
+
+#MainAnchorpane{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30px;
+
+}
+
+#SubAnchorpane{
+    -fx-background-color: #0cb0ff;
+    -fx-background-radius: 15px;
+}
+
+.btn{
+    -fx-background-radius: 20px;
+    -fx-background-color:#0cb0ff;
+}
+
+.textfild{
+    -fx-background-radius: 10px;
+}

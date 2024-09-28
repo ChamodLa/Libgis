@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="908.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.libgis.libray_management_system.Manage_dvd_formController">
+    <children>
+        <TextField fx:id="txtDvdId" layoutX="56.0" layoutY="58.0" onAction="#dvdIdOnAction" prefHeight="25.0" prefWidth="231.0" promptText="DVD ID" />
+        <TextField fx:id="txtDvdName" layoutX="56.0" layoutY="114.0" prefHeight="25.0" prefWidth="231.0" promptText="DVD Name" />
+        <TextField fx:id="txtDvdPrice" layoutX="56.0" layoutY="167.0" prefHeight="25.0" prefWidth="231.0" promptText="Price" />
+        <ComboBox fx:id="cmbDirector" layoutX="56.0" layoutY="261.0" prefHeight="25.0" prefWidth="231.0" promptText="Select Director" />
+        <ComboBox fx:id="cmbDvdCategory" layoutX="56.0" layoutY="309.0" prefHeight="25.0" prefWidth="231.0" promptText="Select Dvd Category" />
+        <TextField fx:id="txtDuration" layoutX="56.0" layoutY="214.0" prefHeight="25.0" prefWidth="231.0" promptText="Duration (min)" />
+        <Button layoutX="56.0" layoutY="527.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="231.0" text="Save" />
+        <Button layoutX="56.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="231.0" text="Update" />
+        <Button layoutX="56.0" layoutY="623.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="231.0" text="Delete" />
+        <Button layoutX="56.0" layoutY="670.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="231.0" text="Clear" />
+        <TableView fx:id="tblDvd" layoutX="333.0" layoutY="58.0" prefHeight="637.0" prefWidth="526.0">
+            <columns>
+                <TableColumn fx:id="colDvdId" prefWidth="92.0" text="DVD ID" />
+                <TableColumn fx:id="colDvdName" prefWidth="126.0" text="DVD Name" />
+                <TableColumn fx:id="colDirectorName" minWidth="1.0" prefWidth="99.0" text="Director" />
+                <TableColumn fx:id="colDvdPrice" minWidth="0.0" prefWidth="109.0" text="Price" />
+                <TableColumn fx:id="colDuration" prefWidth="99.0" text="Duration" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

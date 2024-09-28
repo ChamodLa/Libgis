@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.libgis.libray_management_system.Barrow_book_formController">
+   <children>
+      <TextField fx:id="txtMemberId" layoutX="32.0" layoutY="45.0" onAction="#txtMemberIdOnAction" promptText="Member Id" />
+      <TextField fx:id="txtMemberName" layoutX="201.0" layoutY="45.0" promptText="Member Name" />
+      <TextField fx:id="txtMemberAddress" layoutX="376.0" layoutY="45.0" promptText="Member Address" />
+      <TextField fx:id="txtMemberContact" layoutX="552.0" layoutY="45.0" promptText="Member Contact" />
+      <TextField fx:id="txtMemberEmail" layoutX="728.0" layoutY="45.0" promptText="Member Email" />
+      <TextField fx:id="txtBookId" layoutX="32.0" layoutY="88.0" onAction="#txtBookIdOnAction" promptText="Book Id" />
+      <TextField fx:id="txtBookIsbn" layoutX="201.0" layoutY="88.0" promptText="Book ISBN" />
+      <TextField fx:id="txtBookName" layoutX="376.0" layoutY="88.0" promptText="Book Name" />
+      <TextField fx:id="txtMainCategory" layoutX="552.0" layoutY="88.0" promptText="Main Category" />
+      <DatePicker fx:id="dpBarrowDate" layoutX="32.0" layoutY="137.0" promptText="Borrow Date" />
+      <DatePicker fx:id="dpReturnDate" layoutX="238.0" layoutY="137.0" promptText="Return Date" />
+      <Button layoutX="455.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnAddtoCartOnAction" text="Add To Cart" />
+      <TableView fx:id="tbBarrowBook" layoutX="32.0" layoutY="189.0" prefHeight="540.0" prefWidth="845.0">
+        <columns>
+          <TableColumn fx:id="colBookId" prefWidth="75.0" text="Book Id" />
+          <TableColumn fx:id="colBookName" prefWidth="174.0" text="Book Name" />
+            <TableColumn fx:id="colMemberName" prefWidth="196.0" text="Member Name" />
+            <TableColumn fx:id="colBarrowDate" prefWidth="205.0" text="Barrow Date" />
+            <TableColumn fx:id="colreturnDate" prefWidth="194.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="756.0" layoutY="751.0" mnemonicParsing="false" onAction="#btnConfirmOnAction" prefHeight="39.0" prefWidth="121.0" text="Confirm" />
+   </children>
+</AnchorPane>
